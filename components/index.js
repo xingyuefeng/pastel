@@ -1,0 +1,1 @@
+export { defaut as Button } from './Button'
