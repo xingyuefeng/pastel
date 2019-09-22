@@ -1,1 +1,0 @@
-document.querySelector('#id').innerHTML = '123'

@@ -19,7 +19,11 @@ module.exports = {
   resolve: {
     // modules: ['node_modules'],
     alias: {
+      '@': path.resolve(__dirname, '../../'),
+      'react-dom': '@hot-loader/react-dom',
+
     },
+    extensions: [' ', '.ts', '.tsx', '.js', '.jsx', '.scss', '.svg'],
   },
  
   module: {
@@ -113,5 +117,5 @@ module.exports = {
     // new webpack.DefinePlugin({
     //   DEVELOPMENT: JSON.stringify(devMode),
     // })
-  ]
+  ],
 }

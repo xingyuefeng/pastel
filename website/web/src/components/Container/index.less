@@ -1,0 +1,43 @@
+.app-container {
+  background: rgba(211,175,209, .5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  header {
+    box-shadow: 0 2px 8px #f0f1f2
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+  }
+  .logo {
+    padding-top: 10px;
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      img {
+        width: 60px;
+      }
+    }
+  }
+  .nav {
+    height: 60px;
+    padding-right: 500px;
+    li {
+      line-height: 60px;
+    }
+    a {
+      font-weight: 500;
+      &:hover {
+        color: #9f609c;
+      }
+    }
+  }
+}

@@ -13,12 +13,18 @@ module.exports = {
     // 动态加载 用于代码分割
     '@babel/plugin-syntax-dynamic-import',
     // 支持装饰器
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
     '@babel/plugin-proposal-class-properties',
     ['@babel/plugin-transform-runtime', { corejs: 2 }],
 
     // plugin-babel-import config
     // 支持组件按需加载
-    ['import', { libraryName: 'pastel', libraryDirectory: 'components', style: true }, 'pastel'],
+    // ['import', { libraryName: 'pastel', libraryDirectory: 'components', style: true }, 'antd'],
+    // ["import", {
+    //   "libraryName": "antd",
+    //   "libraryDirectory": "es",
+    //   "style": "css" // `style: true` 会加载 less 文件
+    // }]
   ],
 
   env: {
